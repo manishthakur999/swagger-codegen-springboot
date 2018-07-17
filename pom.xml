@@ -75,7 +75,6 @@
                             <inputSpec>./api-contract/petstore.yml</inputSpec>
                             <language>spring</language>
                             <configOptions>
-                                <sourceFolder>swagger</sourceFolder>
                                 <java8>true</java8>
                                 <interfaceOnly>true</interfaceOnly>
                             </configOptions>

@@ -28,6 +28,18 @@ public class SwaggerDocumentationConfig {
             .build();
     }
 
+    /**
+     * After the Docket bean is defined, its select() method returns an instance of ApiSelectorBuilder,
+     * which provides a way to control the endpoints exposed by Swagger.
+     *
+     * Predicates for selection of RequestHandlers can be configured with the help of RequestHandlerSelectors
+     * and PathSelectors. Using basePackage will make documentation for your entire API available through Swagger.
+     *
+     * This configuration is enough to integrate Swagger 2 into existing Spring Boot project.
+     * For other Spring projects, some additional tuning is required.
+     * @return
+     */
+
     @Bean
     public Docket customImplementation(){
         return new Docket(DocumentationType.SWAGGER_2)
